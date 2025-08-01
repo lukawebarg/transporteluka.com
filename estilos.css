@@ -124,3 +124,18 @@ h2 {
     font-size: 18px;
     line-height: 1.6;
 }
+
+@media (max-width: 600px) {
+  .bloque-historia {
+    padding: 16px;
+    margin: 10px;
+  }
+
+  .seccion {
+    padding: 20px;
+  }
+
+  body {
+    padding: 0 12px;
+  }
+}
