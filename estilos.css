@@ -139,3 +139,18 @@ h2 {
     padding: 0 12px;
   }
 }
+@media (max-width: 600px) {
+  .bloque-historia {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .seccion {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  body {
+    overflow-x: hidden; /* previene desbordes horizontales */
+  }
+}
