@@ -154,3 +154,9 @@ h2 {
     overflow-x: hidden; /* previene desbordes horizontales */
   }
 }
+@media (max-width: 600px) {
+  .menu {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+}
