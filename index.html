@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transporte Luka</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <header>
+    <img src="Transporte Luka-2.png" alt="Logo de Transporte Luka" class="logo" />
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#especiales">Servicios Especiales</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="seccion" id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicio"><img src="icono1.png" alt=""><div><h3>Retiro y Recepción</h3><p>Coordinamos la recolección y recepción de productos en los puntos indicados, asegurando puntualidad y control en cada etapa.</p></div></div>
+    <div class="servicio"><img src="icono2.png" alt=""><div><h3>Entrega puerta a puerta</h3><p>Llevamos los envíos directamente al destino final, facilitando una experiencia cómoda y eficiente para el cliente.</p></div></div>
+    <div class="servicio"><img src="icono3.png" alt=""><div><h3>Repartos en CABA y GBA</h3><p>Realizamos entregas ágiles y organizadas en Capital Federal y el conurbano bonaerense, adaptándonos a diferentes volúmenes y frecuencias.</p></div></div>
+    <div class="servicio"><img src="icono4.png" alt=""><div><h3>Mudanzas generales</h3><p>Brindamos soluciones para traslados residenciales, comerciales o institucionales, cuidando cada detalle del proceso.</p></div></div>
+    <div class="servicio"><img src="icono5.png" alt=""><div><h3>Viajes al interior del país</h3><p>Ofrecemos cobertura nacional, conectando ciudades y provincias con servicios de transporte confiables.</p></div></div>
+    <div class="servicio"><img src="icono6.png" alt=""><div><h3>Almacenaje de pallets</h3><p>Disponemos de espacios seguros para guardar mercadería paletizada, optimizando el control y la disponibilidad de stock.</p></div></div>
+    <div class="servicio"><img src="icono7.png" alt=""><div><h3>Flota propia y tercerizada</h3><p>Contamos con vehículos propios y una red de aliados logísticos, lo que nos permite responder con flexibilidad y eficiencia a cada requerimiento.</p></div></div>
+  </section>
+
+  <section class="seccion" id="especiales">
+    <h2>Servicios Especiales</h2>
+    <div class="servicio"><img src="icono8.png" alt=""><div><h3>Retiro de Contenedores</h3><p>Gestionamos la descarga, control y preparación de mercadería proveniente del exterior, de forma segura y eficiente.</p></div></div>
+    <div class="servicio"><img src="icono9.png" alt=""><div><h3>Gestión de Camiones</h3><p>Coordinamos la descarga y gestión de mercadería proveniente de camiones del exterior, garantizando control, rapidez y cumplimiento normativo.</p></div></div>
+  </section>
+
+  <section class="seccion" id="contacto">
+    <h2>Contacto</h2>
+    
+<form action="https://formsubmit.co/lukaproyectos@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Nombre" required />
+  <input type="email" name="email" placeholder="Correo electrónico" required />
+  <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const servicios = document.querySelectorAll(".servicio");
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      servicios.forEach(serv => {
+        observer.observe(serv);
+      });
+    });
+  </script>
+
+</body>
+</html>
