@@ -139,6 +139,7 @@ h2 {
     padding: 0 12px;
   }
 }
+
 @media (max-width: 600px) {
   .bloque-historia {
     padding-left: 16px;
@@ -151,7 +152,7 @@ h2 {
   }
 
   body {
-    overflow-x: hidden; /* previene desbordes horizontales */
+    overflow-x: hidden;
   }
 }
 
