@@ -125,7 +125,7 @@ h2 {
     line-height: 1.6;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   nav ul.menu {
     padding-left: 32px;
     padding-right: 32px;
